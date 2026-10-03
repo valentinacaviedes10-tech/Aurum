@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Aurum Studio</title>
+<meta name="description" content="Aurum Studio: estudio de diseño y desarrollo web a medida.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}</script>
+</head>
+<body>
+<header class="site-header">
+<div class="container nav-wrap">
+<a class="logo" href="index.html">Aurum<span>.</span></a>
+<button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+<nav id="nav" class="nav" aria-label="Principal"><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="portafolio.html">Portafolio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li></ul><button class="theme-toggle" type="button" aria-label="Cambiar tema">🌙</button></nav>
+</div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><h1>Contáctanos</h1><p>Cuéntanos sobre tu proyecto y te respondemos en 24 horas.</p></div></section>
+<section><div class="container contact-grid">
+<article><h2>Envíanos un mensaje</h2>
+<form id="contact-form" novalidate>
+<div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name"><span class="error" role="alert"></span></div>
+<div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email"><span class="error" role="alert"></span></div>
+<div class="field"><label for="asunto">Asunto</label><input id="asunto" name="asunto" type="text"><span class="error" role="alert"></span></div>
+<div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5"></textarea><span class="error" role="alert"></span></div>
+<button class="btn btn-primary" type="submit">Enviar mensaje</button>
+<p id="success" class="success" role="status"></p>
+</form></article>
+<aside><h2>Datos de contacto</h2>
+<ul class="info-list">
+<li><strong>Dirección</strong>Carrera 7 #71-21, Campoalegre-huila</li>
+<li><strong>Teléfono</strong>+573182228129</li>
+<li><strong>Correo</strong>hola@aurumstudio.co</li>
+<li><strong>Horario</strong>Lunes a viernes, 8:00 a 18:00</li></ul>
+<div class="social"><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></div></aside>
+</div></section>
+</main>
+<footer>
+<div class="container">
+<a class="logo" href="index.html">Aurum<span>.</span></a>
+<ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="portafolio.html">Portafolio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+<p>&copy; 2026 Aurum Studio. Todos los derechos reservados.</p>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
